@@ -1,34 +1,35 @@
-.movieCard {
-  border: 1px white solid;
-  background-color: whitesmoke;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: fit-content;
-  border-radius: 20px;
-  margin: 30px;
-}
-
-.card {
-  margin-top: 20px;
-  width: 18rem;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.title {
-}
-.stars {
-  margin: 5px auto;
-  font-size: 25px;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100vw;
+}
+
+.card {
+  margin: 20px;
+  width: 18rem;
+  opacity: 0.5;
+  border-radius: 10px !important;
+  background-color: whitesmoke !important;
+}
+
+.img {
+  height: 300px !important;
+  width: 200px !important;
+  display: block;
+  margin: auto;
+}
+
+.movieCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  height: 550px;
+  margin: 10px;
+}
+
+.stars {
+  margin: 5px auto;
+  font-size: 25px;
 }

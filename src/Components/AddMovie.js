@@ -73,7 +73,7 @@ const AddMovie = ({setMovies,movies})=>{
                 <Button variant="danger" type="submit" onClick ={(e) => {
                   e.preventDefault()
                   setShow(false)
-                  setMovies([...movies, addMovie])}} > Submit </Button>
+                  setMovies([...movies, addMovie])}} > Add movie </Button>
               </Form>
           </Modal.Body>
         </Modal>
