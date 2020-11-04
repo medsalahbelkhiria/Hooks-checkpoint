@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form, Col, Row } from 'react-bootstrap';
-
+import "./AddMovie.css"
 
 
 
@@ -25,6 +25,7 @@ const AddMovie = ({setMovies,movies})=>{
         </Button>
   
         <Modal
+          
           show={show}
           onHide={() => setShow(false)}
           dialogClassName="modal-90w"
@@ -35,15 +36,15 @@ const AddMovie = ({setMovies,movies})=>{
                   New movie informations
                 </Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="add-modal" >
           <Form>
                 <Form.Group as={Row} controlId="formPlaintextEmail">
-                  <Form.Label column >
+                  <Form.Label  >
                     Title :
                   </Form.Label>
-                  <Col md="8">
+                  
                     <Form.Control type="text" placeholder="Movie title" name="title" onChange={handleChange} />
-                  </Col>
+                  
                 </Form.Group>
 
                 <Form.Group as={Row} controlId="formPlaintextPassword">

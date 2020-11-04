@@ -1,0 +1,27 @@
+.card-description {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  padding: 20px;
+  width: fit-content;
+  background-color: #161616;
+  color: #822f37;
+  font-weight: bold;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 20px;
+}
+
+button {
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  height: 35px;
+  width: 150px;
+  border-radius: 8px;
+  border: none;
+}

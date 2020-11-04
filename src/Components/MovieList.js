@@ -1,5 +1,6 @@
 import React from 'react'
 import MovieCard from './MovieCard'
+import {Link} from 'react-router-dom'
 
   const MovieList = ({movies} )=>{
 
@@ -12,8 +13,10 @@ import MovieCard from './MovieCard'
         
             <div className="row">
             {movies.map((MovieInfos,index)=>{
-                return (
-                <MovieCard key={index} title={MovieInfos.title} posterUrl={MovieInfos.posterUrl} description={MovieInfos.description} rate={MovieInfos.rate} />
+              return ( 
+                  <Link to={`/description/${MovieInfos.description}/${MovieInfos.video}`} style={{textDecoration : "none", color:"black" }}>
+                      <MovieCard key={index} title={MovieInfos.title} posterUrl={MovieInfos.posterUrl} description={MovieInfos.description} rate={MovieInfos.rate} />
+                  </Link> 
                 )
             })}
         </div>

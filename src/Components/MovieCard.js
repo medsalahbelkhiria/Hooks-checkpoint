@@ -9,7 +9,7 @@ const MovieCard=({title, posterUrl, description, rate} ) =>{
 
     return(
         <div >
-             <Card className="card">
+             <Card className="movie-card">
                 <Card.Body className='movieCard'>
                     <Card.Img className="img" variant="top" src={posterUrl} />
                     

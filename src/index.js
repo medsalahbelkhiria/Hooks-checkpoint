@@ -4,11 +4,21 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Description from './Components/Description';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route
+          path="/description/:description/:video"
+          component={Description}
+        />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
